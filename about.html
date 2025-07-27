@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Pet Adoption Center</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #fff8f0 0%, #fdecef 100%);
+            background-attachment: fixed;
+            color: #333;
+        }
+        
+        header {
+            background-color: #ff6b81;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .about-section {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .about-section h2 {
+            color: #ff6b81;
+            margin-bottom: 10px;
+        }
+        
+        .about-section p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        
+        .about-section ul {
+            padding-left: 20px;
+        }
+        
+        .about-section ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #ff6b81;
+            text-align: center;
+            color: white;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+        /* Background animation */
+        
+        body::before {
+            content: "";
+            background-image: url('https://cdn.dribbble.com/users/882913/screenshots/9893752/media/f3f1a37ee46a62a3d29c38d2f6daa6ea.gif?vid=1');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            opacity: 0.05;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="calculator.html">Cost Calculator</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>At Pet Adoption Center, we are dedicated to finding loving homes for pets in need. Our goal is to make pet adoption an easy, accessible, and rewarding experience for both pets and their new families.</p>
+
+            <h2>Our Team</h2>
+            <p>We are a team of animal lovers who work together to ensure every pet finds a forever home. Our team includes experienced pet caregivers, adoption counselors, and volunteers who are passionate about animals.</p>
+
+            <h2>Our Values</h2>
+            <ul>
+                <li>Compassion</li>
+                <li>Integrity</li>
+                <li>Love for animals</li>
+                <li>Community support</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pet Adoption Center. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

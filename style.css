@@ -1,0 +1,141 @@
+/* General Reset and Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the footer stays at the bottom */
+}
+
+
+/* Header Styling */
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+/* Main Content Styling */
+
+main {
+    flex-grow: 1;
+    /* Ensures the main content area grows to push the footer to the bottom */
+    padding: 2rem 1rem;
+}
+
+.adopt-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.adopt-pet {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    /* Limits the size of each pet card */
+}
+
+.adopt-pet img {
+    width: 100%;
+    /* Ensures image resizes within the container */
+    height: auto;
+    max-height: 250px;
+    /* Limits the height of images */
+    object-fit: cover;
+    /* Ensures the image covers the space without distortion */
+    border-radius: 10px;
+}
+
+.adopt-pet h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.adopt-pet p {
+    color: #666;
+}
+
+
+/* Hover Effect on Pet Cards */
+
+.adopt-pet:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    /* Pushes the footer to the bottom of the page */
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    .adopt-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .adopt-section {
+        grid-template-columns: 1fr;
+        /* Single column for very small screens */
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

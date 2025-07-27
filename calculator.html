@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost Calculator | Pet Adoption Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fff8f0 0%, #fdecef 100%);
+            background-attachment: fixed;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: #ff6b81;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .calculator-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .calculator-section h2 {
+            color: #ff6b81;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            border: 2px solid #ff6b81;
+            border-radius: 8px;
+            outline: none;
+        }
+        
+        select:focus,
+        button:focus {
+            border-color: #ff1e56;
+            box-shadow: 0 0 10px rgba(255, 0, 86, 0.5);
+        }
+        
+        button {
+            background-color: #ff6b81;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ff1e56;
+        }
+        
+        #result {
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #ff6b81;
+        }
+        
+        footer {
+            background-color: #ff6b81;
+            text-align: center;
+            color: white;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cost Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="calculator.html">Cost Calculator</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h2>Estimate Your Pet Care Costs</h2>
+            <form id="cost-form">
+                <label for="pet-type">Select Pet Type:</label>
+                <select id="pet-type" name="pet-type">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="rabbit">Rabbit</option>
+                </select>
+
+                <label for="pet-age">Select Pet Age:</label>
+                <select id="pet-age" name="pet-age">
+                    <option value="puppy">Puppy/Kitten</option>
+                    <option value="adult">Adult</option>
+                    <option value="senior">Senior</option>
+                </select>
+
+                <button type="button" onclick="calculateCost()">Calculate</button>
+            </form>
+
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pet Adoption Center. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

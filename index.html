@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Adoption Center</title>
+
+    <style>
+        /* Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body */
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Header */
+        
+        header {
+            background-color: #ff6b81;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Hero Section */
+        
+        .hero-section {
+            background-color: #fff8f0;
+            padding: 50px 20px;
+        }
+        
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .hero-img {
+            width: 300px;
+            max-width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-text {
+            text-align: center;
+        }
+        
+        .glow-text {
+            font-size: 2.5rem;
+            color: #333;
+            text-shadow: 0 0 10px #ff6b81, 0 0 20px #ff6b81;
+            margin-bottom: 10px;
+        }
+        
+        .glow-subtext {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        /* Features Section */
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        
+        .feature {
+            background-color: #fefefe;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            font-size: 1.8rem;
+            color: #ff6b81;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            font-size: 1rem;
+            color: #666;
+        }
+        /* Footer */
+        
+        footer {
+            background-color: #ff6b81;
+            text-align: center;
+            color: white;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Pet Adoption Center</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="calculator.html">Cost Calculator</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <img src="https://cdn.dribbble.com/users/882913/screenshots/9893752/media/f3f1a37ee46a62a3d29c38d2f6daa6ea.gif?vid=1" alt="Pet Animation" class="hero-img" />
+                <div class="hero-text">
+                    <h2 class="glow-text">Find Your New Best Friend</h2>
+                    <p class="glow-subtext">Adopt, love, and care — because every pet deserves a home ❤️</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Adopt a Pet" />
+                <h3>Adopt</h3>
+                <p>Browse through our list of adorable pets ready for adoption.</p>
+            </div>
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Love & Care" />
+                <h3>Love & Care</h3>
+                <p>Give your new pet a caring home and a joyful life.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pet Adoption Center. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
