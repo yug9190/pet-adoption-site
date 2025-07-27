@@ -87,7 +87,7 @@ No frameworks or libraries needed.
 ## 🚀 How to Run
 
 1. Download or clone the repo:
-git clone https://github.com/your-username/pet-adoption-site.git
+git clone https://github.com/yug9190/pet-adoption-site
 
 
 2. Open `index.html` in your browser.
@@ -97,7 +97,7 @@ git clone https://github.com/your-username/pet-adoption-site.git
 ## 🙏 Credits
 
 - Pet images from [Unsplash](https://unsplash.com).
-- Developed by: **Your Name**
+- Developed by: **Naveen saini**
 - Inspired by love for animals and adoption awareness ❤️
 
 ---
